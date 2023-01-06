@@ -46,9 +46,7 @@ ul .nav-item a{
     text-align: center;
     align-self: center;
 }
-.main{
-    display: grid;
-}
+
 .card h3{
     background-color: rgb(26, 115, 232);
 }
