@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Fredoka+One&family=Lato&family=Lexend+Deca:wght@800&family=Open+Sans:wght@400;800&family=Pacifico&family=Sansita+Swashed:wght@400;800;900&family=Silkscreen&family=Tangerine:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+.countener{
+    background-color: darkslategrey;
+}
+ul .nav-item a{
+    font-size: 20px;
+    color:  white;
+}
+.hamburger-menu{
+    /* background-color: white; */
+    width: 35px;
+    height: 30px;
+    /* position: fixed; */
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.line {
+    width: 100%;
+    height: 5px;
+    background-color:beige;
+}
+#profile{
+    display: grid;
+    grid-template-columns: 130px auto;
+    background-color: rgb(26, 115, 232);
+}
+#profile img{
+    width: 90px;
+    height: auto;
+}
+#profile h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+}
+.main{
+    display: grid;
+}
+.card h3{
+    background-color: rgb(26, 115, 232);
+}
