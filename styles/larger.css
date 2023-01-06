@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Fredoka+One&family=Lato&family=Lexend+Deca:wght@800&family=Open+Sans:wght@400;800&family=Pacifico&family=Sansita+Swashed:wght@400;800;900&family=Silkscreen&family=Tangerine:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+}
+.countener{
+    width: auto;
+    height: 50px;
+    background-color: darkslategrey;
+}
+.nav-item a{
+    font-size: 20px;
+    color:  white;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: minmax(150px, 20%) 1fr;
+    /* display: flex;
+    place-items: center; */
+
+}
+.hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 15px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.nav-link{
+    display: flex; 
+}
+.nav-link li{
+    padding: 15px;
+}
+ul li {
+    list-style-type: none;
+}
+.card ul li a,a{
+    color: black;
+}
+.line {
+    width: 100%;
+    height: 5px;
+    background-color:beige;
+}
+#profile{
+    display: grid;
+    grid-template-columns: 130px auto;
+    background-color: rgb(26, 115, 232);
+}
+#profile img{
+    border-radius: 50px;
+    width: 90px;
+    height: auto;
+    box-shadow: 5px 5px 10px #6f7364
+}
+#profile h1{
+    font-family: 'Pacifico', cursive;
+    color: beige;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+}
+.main-countener .card { 
+    width: 500px;
+    height: 150px;
+    /* background-color: bisque; */
+    border: solid 1px gray;
+    border-radius: 10px;
+    flex: 1 1 500px;
+    flex: 0 1 500px;
+}
+.main-countener .card .link .information{
+    display: flex;
+    place-items: center;
+}
+.card{ 
+    /* margin: 20px 0 20px 0; */
+    margin: 20px;
+    box-shadow: 5px 5px 10px #6f7364
+}
+.main-countener{
+    /* display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr; 
+    margin: 20px 0 30px 0;
+    place-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: minmax(600px, 25%) auto;
+}
+
+
+.card h3{
+    display: grid;
+    color: beige;
+    place-items: center;
+    border-radius: 10px 10px;
+    background-color: rgb(26, 115, 232);
+}
+footer{
+    background-color:  darkslategrey;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+footer .highlight {
+    margin-top: 30px;
+    color: blueviolet;
+}
