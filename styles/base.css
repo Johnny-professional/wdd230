@@ -110,5 +110,8 @@ footer{
 }
 footer .highlight {
     margin-top: 30px;
-    color: blueviolet;
+    color: beige;
+}
+footer p{
+    color: beige;
 }
