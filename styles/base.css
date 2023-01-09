@@ -52,7 +52,7 @@ ul li {
 #profile{
     display: grid;
     grid-template-columns: 130px auto;
-    background-color: rgb(26, 115, 232);
+    background-color: rgb(0, 94, 146);
 }
 #profile img{
     border-radius: 50px;
@@ -100,7 +100,7 @@ ul li {
     color: beige;
     place-items: center;
     border-radius: 10px 10px;
-    background-color: rgb(26, 115, 232);
+    background-color: rgb(0, 94, 146);
 }
 footer{
     background-color:  darkslategrey;
