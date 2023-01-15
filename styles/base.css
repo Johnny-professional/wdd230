@@ -20,9 +20,12 @@ body{
 .navbar{
     display: flex;
     place-items: center;
-
+    transition: .5s;
+    position: fixed;
+    top: -10px;
+    
 }
-.hamburger-menu{
+.hamburger{
     width: 35px;
     height: 30px;
     position: fixed;
@@ -31,6 +34,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: transparent;
+    border: none;
 }
 .nav-link{
     display: flex; 
@@ -47,7 +52,7 @@ ul li {
 .line {
     width: 100%;
     height: 5px;
-    background-color:beige;
+    background-color: beige;
 }
 #profile{
     display: grid;
@@ -114,4 +119,26 @@ footer .highlight {
 }
 footer p{
     color: beige;
+}
+
+.navbar.active {
+    top: 0;
+}
+
+
+.hamburger.open #bar1{
+    background-color: #000;
+    transform: rotate(45deg) translate(6px, 5px);
+
+}
+
+.hamburger.open #bar2{
+    background-color: transparent
+    
+}
+
+.hamburger.open #bar3{
+    /* background-color: #000; */
+    transform: rotate(-45deg) translate(6px, -5px);
+    
 }
