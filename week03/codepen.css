@@ -1,0 +1,160 @@
+body {
+    font: 400 16px / 1.5 Ubuntu, sans-serif;
+  }
+  
+  .gridarea {
+    margin: 0 auto;
+    max-width: 860px;
+    display: grid;
+    grid-gap: 0.75rem;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "form"
+      "footer";
+  }
+  
+  header,
+  nav,
+  main {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px #000;
+  }
+  
+  header {
+    background-color: #333;
+    display: grid;
+    padding: 1rem;
+    grid-area: header;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font: 700 1.5rem "Winter Is Coming", sans-serif;
+    color: #fff;
+  }
+  
+  h2 {
+    font: 700 1.3rem Georgia, serif;
+  }
+  
+  nav {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-area: main;
+  }
+  
+  aside {
+    grid-area: aside;
+  }
+  
+  aside div,
+  form {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+  }
+  
+  form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto;
+    min-width: 40%;
+  }
+  
+  label {
+    display: block;
+    font-size: smaller;
+  }
+  
+  input,
+  textarea,
+  select {
+    padding: 0.5rem;
+    color: navy;
+    font-weight: 700;
+  }
+  
+  button {
+    background-color: navy;
+    color: white;
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  section {
+    padding: 1rem;
+  }
+  section p {
+    margin-left: 0.5rem;
+  }
+  picture {
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    margin-top: 1rem;
+    border-top: 1px solid #eee;
+    padding: 0.5rem;
+    font-size: smaller;
+    grid-area: footer;
+    text-align: center;
+  }
+  
+  .navitem:hover {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+  }
+  .fixme {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .gridarea {
+      grid-gap: 1rem;
+      grid-template-columns: 250px 1fr;
+      grid-template-areas:
+        "header header "
+        "nav main"
+        "aside aside"
+        "form form"
+        "footer footer";
+    }
+  
+    header {
+      background-color: #555;
+    }
+  
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+  
