@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Fredoka+One&family=Lato&family=Lexend+Deca:wght@800&family=Open+Sans:wght@400;800&family=Pacifico&family=Sansita+Swashed:wght@400;800;900&family=Silkscreen&family=Tangerine:wght@700&display=swap');
+:root {
+    --first-Color--:rgb(0, 94, 146); 
+    --second-color--:darkslategrey;
+    --tird-color--:rgb(235, 165, 27);
+    --text-color--: white;
+    --font-family--:'Lato', sans-serif;
+    --shadow--:5px 10px 5px #6f7364;
+    
+}
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +15,7 @@
 body{
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-family--);
 }
 .countener{
     width: auto;
@@ -15,7 +24,7 @@ body{
 }
 .nav-item a{
     font-size: 20px;
-    color:  white;
+    color: var(--text-color--);
 }
 .navbar{
     display: flex;
@@ -57,13 +66,13 @@ ul li {
 #profile{
     display: grid;
     grid-template-columns: 130px auto;
-    background-color: rgb(0, 94, 146);
+    background-color: var(--first-Color--);
 }
 #profile img{
     border-radius: 50px;
     width: 90px;
     height: auto;
-    box-shadow: 5px 5px 10px #6f7364
+    box-shadow: var(--shadow--);
 }
 #profile h1{
     font-family: 'Pacifico', cursive;
@@ -88,7 +97,7 @@ ul li {
 .card{ 
     /* margin: 20px 0 20px 0; */
     margin: 20px;
-    box-shadow: 5px 5px 10px #6f7364
+    box-shadow: var(--shadow--);
 }
 .main-countener{
     display: flex;
@@ -105,13 +114,14 @@ ul li {
     color: beige;
     place-items: center;
     border-radius: 10px 10px;
-    background-color: rgb(0, 94, 146);
+    background-color: var(--first-Color--);
 }
 footer{
     background-color:  darkslategrey;
     display: flex;
     flex-direction: column;
     place-items: center;
+    margin-top: 50px;
 }
 footer .highlight {
     margin-top: 30px;
@@ -142,3 +152,48 @@ footer p{
     transform: rotate(-45deg) translate(6px, -5px);
     
 }
+
+.contact {
+    width: 400px;
+    margin: 1rem;
+    border: 1px solid #000;
+    padding: 2rem;
+    background-color: var(--first-Color--);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: var(--shadow--);
+    font-size: 15px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.send {
+    margin-top: 30px;
+    justify-self: center;
+    padding:5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: var(--tird-color--);
+
+}
+.send  h2 {
+    background-color: var(--tird-color--);
+    border: none;
+}
+.message {
+    margin-top: 10px;
+    color: aliceblue;
+}
+.send:hover {
+    background-color: rgb(209, 137, 4);
+}
+input:focus {
+    background-color: #a3a59d;
+}
+
+
+

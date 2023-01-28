@@ -1,0 +1,48 @@
+:root {
+	--border: 1px solid #000;
+} 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #eee;
+}
+
+.datatable {
+	width: 200px;
+	margin-top: 2rem;
+}
+
+.row {
+	border-left: var(--border);
+	display: grid;
+	grid-template-columns: 100px 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.col {
+	border-top: var(--border);
+	border-right: var(--border);
+	padding: 10px;
+}
+a:hover {
+	color: navy;
+}
+.row:last-child{
+	border-bottom:var(--border);
+	background-color: gray;
+}
