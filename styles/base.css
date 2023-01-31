@@ -194,6 +194,55 @@ form{
 input:focus {
     background-color: #a3a59d;
 }
+.information {
+    margin-bottom: 40px;
+}
 
+.iframe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* box-shadow: var(--shadow--); */
+}
+.iframe iframe {
+    box-shadow: var(--shadow--);
+    border-radius: 10px;
+}
 
+/* HERO TEMPLE */
 
+.hero {
+    max-width: 670px;
+    margin: 0 auto; 
+	/* margin: 10px auto; */
+	position: relative;
+	border: 1px solid rgba(0,0,0,.1);
+	height: 400px;
+}
+
+.hero img {
+	width: 100%;
+	height: 400px;
+	/* object-fit: cover; */
+     
+}
+.hero img:hover {
+    opacity: 0.9;
+}
+
+.labelhero {
+    position: absolute;
+    background-color: rgb(255, 255, 255,.2);
+    top: 30px;
+    right: 30px;
+    padding: 1.5rem;
+    border: 1px solid #a3b58d;
+    font-family: var(--font-family--);
+    box-shadow: 0 0 3rem rgb(255, 255, 255,.5);
+   
+}
+.labelhero p {
+    font-size: 1.2rem;
+    color: var(--text-color--);
+    font-weight: 600;
+}
