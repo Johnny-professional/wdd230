@@ -1,0 +1,12 @@
+{
+    "week01": ["week01/images/Wirefram.png", "week01/set-plan.html"],
+
+    "week02": ["chamber/index.html", "week02/design.html"],
+
+    "week03": ["week03/images/Landscape.webp","week03/lazyload.html","week03/codepen.html","chamber/discover.html"],
+    
+    "week04": ["week04/codepen.html","chamber/join.html"],
+    
+    "week05":["index.js"]
+    
+}

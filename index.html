@@ -72,6 +72,7 @@
                     </li>
                     <li>
                         <a href="#">week 05:</a>
+                        <a href="week05/codePen.html">CodePen</a>
                     </li>
                     <li>
                         <a href="#">week 06:</a>
@@ -87,8 +88,21 @@
 
             <section class="card">
                 <h3>Information</h3>
-                <p class="information"><span class="temp"> </span>°C</p>
-                <p class="condition"></p> 
+                <div class="notification"></div>
+                <div class="weather-countener">
+                    <div class="weather-icon">
+                        <img src="images/icon.ico" alt="">
+                    </div>
+                    <div class="temperature-value">
+                        <p class="condition">-° <span>C</span></p> 
+                    </div>
+                    <div class="temperature-description">
+                        <p>-</p> 
+                    </div>
+                    <div class="location">
+                        <p>-</p>
+                    </div>
+                </div>
                 <p><span class="label">Visit count: </span><span class="visits"></span></p>
             </section>
         </div>
@@ -122,5 +136,6 @@
         <p class="highlight">Last modification</p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/temperature.js"></script>
 </body>
 </html>
