@@ -306,3 +306,37 @@ footer p{
 #message {
     height: 100px;
 }
+
+/* this is mhy Directory style */
+.company-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#companies {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);  */
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+
+}
+
+
+
+#companies div {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    margin: 30px;
+    box-shadow: 5px 5px gray;
+
+}
+#companies, h3, h4 {
+    margin: 40px;
+    text-align: center;
+}
+@media only screen and (max-width:1000px) {
+    .companies {
+        display: flex;
+        flex-direction: column
+    }
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "companyName" : "Name: Rio Tinto",
+        "adress": "location: london, UK",
+        "phoneNumber": null,
+        "websiteURL": "https://www.riotinto.com/en",
+        "imgURL": "logo/Rio_TintoLogo1.png",
+        "Level": 84,
+        "Employees": 49.350
+    },
+    {
+        "companyName" : "Name: Fast Retailing",
+        "adress": "location: Yamaguchi, Japan",
+        "phoneNumber":  2343453453,
+        "websiteURL": "https://www.fastretailing.com/eng",
+        "imgURL": "logo/Fast_Retailing-Logo1.png",
+        "Level": 499,
+        "Employees": 55.589
+    },
+    {
+        "companyName" : "Name: Barrick Gold",
+        "adress": "location: toronto, Canada",
+        "phoneNumber": 25479275,
+        "websiteURL": "https://www.barrick.com/",
+        "imgURL": "logo/barrick_logo1.png",
+        "Level": 478,
+        "Employees": 21.869
+    },
+    {
+        "companyName" : "Name: Henkel",
+        "adress": "location: Dusseldorf, Germany",
+        "phoneNumber": 98664219,
+        "websiteURL": "https://www.henkel.com/",
+        "imgURL": "logo/Henkel_logo1.png",
+        "Level": 453,
+        "Employees": 52.450
+    },
+    {
+        "companyName" : "Name: Naspers",
+        "adress": "location: Cape town, south Africa",
+        "phoneNumber": 4638599272,
+        "websiteURL": "https://www.naspers.com/",
+        "imgURL": "logo/nespers1.png",
+        "Level": 447,
+        "Employees": 28.445
+    },
+    {
+        "companyName" : "Name: GUOSEN",
+        "adress": "location: Shenzhen, china",
+        "phoneNumber": 394879,
+        "websiteURL": "https://www.guosen.com.hk/english_main/",
+        "imgURL": "logo/Guosen_Logo1.png",
+        "Level": 909,
+        "Employees": 12.054
+    },
+    {
+        "companyName" : "Name: United Microelectronics",
+        "adress": "location: Hsinchu,Taiwan",
+        "phoneNumber": 345345,
+        "websiteURL": "https://www.umc.com/en/home/",
+        "imgURL": "logo/United_Mic_logo1.png",
+        "Level": 929,
+        "Employees": null
+    }
+]
+
