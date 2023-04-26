@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Fredoka+One&family=Lato&family=Lexend+Deca:wght@800&family=Open+Sans:wght@400;800&family=Pacifico&family=Sansita+Swashed:wght@400;800;900&family=Silkscreen&family=Tangerine:wght@700&display=swap');
 :root {
-    --first-Color--:rgb(0, 94, 146); 
+    /* --first-Color--:rgb(0, 94, 146);  */
     --second-color--:darkslategrey;
-    --tird-color--:rgb(235, 165, 27);
+    /* --tird-color--:rgb(235, 165, 27); */
     --text-color--: white;
     --font-family--:'Lato', sans-serif;
     --shadow--:5px 5px 10px #6f7364;
@@ -23,7 +23,7 @@ body{
     display: grid;
     grid-template-columns: 130px auto;
     border-radius: 10px;
-    background-color: var(--first-Color--);
+    background-color: var(--second-color--);
     box-shadow: var(--shadow--);
 }
 
@@ -44,7 +44,7 @@ body{
 #profile h1{
     font-family: 'Pacifico', cursive;
     color: beige;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     align-self: center;
 }
