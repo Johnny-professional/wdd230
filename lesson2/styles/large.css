@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Fasthand&family=Fredoka+One&family=Lato&family=Lexend+Deca:wght@800&family=Open+Sans:wght@400;800&family=Pacifico&family=Sansita+Swashed:wght@400;800;900&family=Silkscreen&family=Tangerine:wght@700&display=swap');
+:root {
+    --second-color--:darkslategrey;
+    --text-color--: white;
+    --font-family--:'Lato', sans-serif;
+    --shadow--:5px 5px 10px #6f7364;
+    
+}
+*{
+    /* font-family: var(--font-family--); */
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 10px 0 10px 0;
+    max-width: 1600px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+header, footer{
+    box-shadow: var(--shadow--);
+    background-color: var(--second-color--);
+    border-radius: 20px;
+    /* align-self: center; */
+}
+#design{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+.text, h3{
+    font-family: var(--font-family--);
+    color: white;
+}
+.date{
+    color: yellow;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-items: center; */
+    margin: 10px 0 10px 0;
+    justify-items: center;
+}
+.designName{
+    background-color: rgb(3, 17, 119);
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+.screenshot{
+    box-shadow: var(--shadow--);
+    border: 2px black;
+    margin: 10px;
+    /* align-self: center; */
+}
+.images{
+    align-content: center;
+}
+img, .screenshot{
+    width: 15em;
+    height: auto;
+}
+

@@ -1,0 +1,24 @@
+@media(max-width: 62em){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:nth-child(2){
+        display: block;
+    }
+    main section:nth-child(3){
+        grid-column: span 2;
+    }
+}
+/* @media (max-width: 32.5em) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #design h1{
+        font-size: 1.5em;
+    }
+    #design h2{
+        font-size: 1.2em;
+    }
+} */

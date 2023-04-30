@@ -1,0 +1,13 @@
+@media (max-width: 32.5em) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #design h1{
+        font-size: 1.5em;
+    }
+    #design h2{
+        font-size: 1.2em;
+    }
+}
