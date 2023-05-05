@@ -31,6 +31,7 @@ header, footer{
 }
 footer{
     text-align: center;
+    height: 5em;
 }
 .text, h3{
     font-family: var(--font-family--);
