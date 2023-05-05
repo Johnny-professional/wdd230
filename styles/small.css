@@ -26,7 +26,7 @@ body{
     display: grid;
     grid-template-columns: 130px auto;
     border-radius: 10px;
-    height: 10.5em;
+    height: 14.5em;
     background-color: var(--second-color--);
     box-shadow: var(--shadow--);
 }
@@ -34,8 +34,9 @@ body{
 #profile img{
     border-radius: 50px;
     width: auto;
-    height: 150px;
-    margin-left: 20px;
+    height: 200px;
+    margin: 20px;
+    /* margin: ; */
     box-shadow: 5px 5px 5px #252525;
 }
 .horizontal{
@@ -49,7 +50,7 @@ body{
 #profile h1{
     font-family: 'Pacifico', cursive;
     color: white;
-    font-size: 30px;
+    font-size: 2.5em;
     text-align: center;
     align-self: center;
 }

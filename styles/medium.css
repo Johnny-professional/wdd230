@@ -16,3 +16,9 @@
     }
 
 }
+@media(max-width: 45em) {
+        #profile h1{
+            /* background-color: brown; */
+            font-size: 1.5em;
+        }
+} 
