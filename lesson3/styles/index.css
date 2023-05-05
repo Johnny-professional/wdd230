@@ -1,0 +1,170 @@
+:root{
+    --first-color--: #263248;
+    --second-color--: #f8bd0a;
+    /* --third-color--:; */
+    --shadow--: 5px 5px 10px #6f7364; 
+    --text-color--: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+body{
+    min-width: 276px;
+    max-width: 1850px;
+    margin: 0 15px 0 15px;
+}
+
+#link{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--first-color--);
+    border-radius: 15px 15px 0 0;
+    justify-content: center;
+    box-shadow: var(--shadow--);
+}
+
+
+#link a {
+    color: var(--text-color--);
+    padding: 10px;
+    margin: 10px 50px 10px 50px;
+}  
+#link a:hover{
+    background-color: var(--second-color--);
+    border-radius: 10px;
+    color: black;
+}
+#Logo{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--second-color--);
+    justify-content: center;
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--shadow--);
+
+}
+#Logo img{
+    width: 20em;
+    border-radius: 30px;
+    margin: 15px;
+    box-shadow: var(--shadow--);
+}
+#Logo div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 10em;
+    text-shadow: var(--shadow--);
+    /* box-shadow: var(--shadow--); */
+
+    
+}
+
+#Logo div h1{
+    font-size: 4em;
+}
+#Logo div h2{
+    font-size: 2em;
+}
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+footer, main{
+    margin-top: 30px;
+}
+hr{
+    width: 59em;
+    height: 3px;
+    margin: 35px 0;
+    background: var(--second-color--);
+}
+footer{
+    text-align: center;
+    border-radius: 15px;
+    background-color: var(--first-color--);
+    color: var(--text-color--);
+    box-shadow: var(--shadow--);
+    height: 5em;
+}
+.date{
+    color: var(--second-color--);
+}
+
+/* DESIGN FOR THE SCREEN */
+@media(max-width: 43em){
+    #link a{
+        margin: 10px 30px 10px 30px;
+    }
+    #Logo div{
+        margin-left: 7px;
+    }
+    @media( max-width: 583px){
+        #link{
+            flex-direction: column;
+            align-items: center;
+        }
+        #Logo div{
+            display: none;
+        }
+    }
+}
+
+
+/* DESIGN PAGE */
+.colors th {
+    background-color: #999;
+  }
+.colors td{
+width: 25%;
+height: 3em;
+}
+.Log{
+    background-color: black;
+    color: var(--text-color--);
+
+}
+#webLogo{
+    width: 20em;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow--);
+}
+table{
+    width: 600px;
+    height: auto;
+}
+.first{
+    background-color: var(--first-color--);
+    color: var(--text-color--);
+}
+.second{
+    background-color: var(--second-color--);
+}
+.text{
+    background-color: var(--text-color--);
+}
+
+
+/* Target-Audience DESIGN */
+.target{
+    margin-bottom: 3em;
+}
+.target h2{
+    background-color: var(--first-color--);
+    color: white;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    box-shadow: var(--shadow--);
+
+}
+.target p{
+    font-size: 1.4em;
+
+}
