@@ -27,6 +27,7 @@ header, footer{
 }
 #design{
     text-align: center;
+    height: 10em;
 }
 footer{
     text-align: center;
@@ -54,13 +55,19 @@ main{
     box-shadow: var(--shadow--);
     border: 2px black;
     margin: 10px;
+    border-radius: 10px 10px 0 0;
+    
     /* align-self: center; */
+}
+.screenshot div {
+    width: 25em;
+    
 }
 .images{
     align-content: center;
 }
 img, .screenshot{
-    width: 15em;
+    width: 25em;
     height: auto;
 }
 
