@@ -11,6 +11,9 @@
     font-family: 'Roboto', sans-serif;
 
 }
+/* button{
+    display: none;
+} */
 body{
     min-width: 276px;
     max-width: 1850px;
@@ -28,6 +31,7 @@ body{
 
 
 #link a {
+    text-decoration: none;
     color: var(--text-color--);
     padding: 10px;
     margin: 10px 50px 10px 50px;
@@ -96,6 +100,8 @@ footer{
     color: var(--second-color--);
 }
 
+
+
 /* DESIGN FOR THE SCREEN */
 @media(max-width: 43em){
     #link a{
@@ -112,6 +118,15 @@ footer{
         #Logo div{
             display: none;
         }
+        /* button{
+            display: block;
+            color: var(--text-color--);
+            font-size: 2em;
+            background-color: var(--first-color--);
+            border: none;
+        } */
+        /* #link a{display: none;}
+        #link a.open {display: flex;} */
     }
 }
 
