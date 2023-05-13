@@ -1,0 +1,98 @@
+@media(min-width: 50.5rem){
+    nav button{display: block;}
+
+    nav ul{
+        display: none;
+    }
+    #Logo{
+        display: flex;
+        flex-direction: row;
+    }
+    #Logo #miray{
+        margin: 0;
+    }
+
+
+
+    /* nav ul {
+        display: flex;
+        justify-content: center; 
+        border-left: 1.5px solid rgb(0,0,0,.4);
+        
+    }
+    nav ul li a{
+        border-right: 1.5px solid rgb(0,0,0,.4);
+    } */
+    main #join {
+        display: block;
+    }
+    main #spotlight{
+        display:flex;
+        flex-direction: row;
+    }
+    main #spotlight #spot3{
+        display: none;
+    }
+    
+    div #icon{
+        display: flex;
+        flex-direction: row;
+    }
+    /* main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main #hero{
+        grid-row: 1/2;
+        grid-column:1/3;
+    }
+    main #news, main #spotlight, main #join{
+        grid-column: 1/3;
+    }
+    main #news{grid-row: 2/3;}
+    main #spotlight{grid-row: 3/4;}
+    main #join{grid-row: 4/5;} */
+
+    div #icon img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer:nth-child(2){
+        display: block;
+    }
+    footer #image{
+        display: flex;
+        flex-direction: row;
+    }
+    footer #image section{
+        align-self: center;
+    }
+    footer:nth-child(3){
+        grid-column: span 2;
+    }
+    footer #name{grid-column: 1/3;}
+    footer #location{
+        align-self: center;
+    }
+    footer hr{
+        display: none;
+    }  
+    
+}
+/* @media(max-width: 34.5rem){ */
+    /* #Logo div{
+        /* margin-left: 7px; */
+        /* display: none; */
+    
+
+@media(max-width: 48.5rem){
+    #Logo div{
+        margin-left: 7px;
+        
+    }
+}

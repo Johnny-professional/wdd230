@@ -1,0 +1,65 @@
+@media(min-width: 60rem){
+    nav button{display: none;}
+   
+
+    nav {
+        justify-content: center;
+    }    
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        border-left: 1.5px solid rgb(0,0,0,.4);
+        
+    }
+    nav ul li a{
+        border-right: 1.5px solid rgb(0,0,0,.4);
+    }
+    
+    nav ul li a{
+        font-size: 1.3em;
+    }
+    nav ul li{
+        width: 9em;
+    }
+    main #spotlight #spot3{
+        display: block;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    #Logo #miray,#Logo #icon{
+        margin-left: 10rem;
+    }
+    main #event{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    main #weather{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    main #join{
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+    main #spotlight{
+        display: flex;
+        flex-direction: column;
+        grid-row: 1/4;
+        grid-column: 3/4;
+    }
+    main #spotlight .spot1-2{
+        height: 22.5rem;
+    }
+    main #hero{
+        height: 51.5rem;
+        grid-row: 1/3;
+    }
+    footer #image section{
+        padding-left: 3rem;
+    }
+
+}
