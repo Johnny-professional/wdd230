@@ -92,7 +92,7 @@ main #spotlight #spot3{
     display: flex;
     flex-direction: column;
     /* align-self: center; */
-    /* justify-content: center; */
+    justify-content: center;
     /* margin-left: ; */
     text-shadow: var(--shadow--);
     /* box-shadow: var(--shadow--); */  
