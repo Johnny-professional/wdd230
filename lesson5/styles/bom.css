@@ -1,0 +1,70 @@
+body{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 170px;
+    max-width: 60rem;
+}
+section{
+    width: 40rem;
+    height: auto;
+    border: 1px solid #2222;
+    background-color: rgba(34, 54, 129,.5);
+    align-items: center;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+}
+#form button, #form h2{
+    margin-left: 10px;
+}
+#form input{
+    width: 15rem;
+    height: 2.5rem;
+    align-self: center;
+}
+#form input:hover{
+    background-color: rgba(2, 3, 3, 0.5);
+    color: white;
+}
+#form button{
+    height: 2.6rem;
+    align-self: center;
+}
+#add{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+}
+#add button{
+    width: 4rem;
+    justify-self: end;
+}
+ul li{
+display: grid;
+grid-template-columns: 1fr 1fr;
+width: 29rem;
+margin-top: 5px;
+padding-left: 30px;
+}
+
+@media(max-width:643px ){
+    section #form{
+        display: flex;
+        flex-direction: column;
+    }
+    #form h2{
+        text-align: center;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    #add ul li{
+    width: 15rem;
+    }
+}
+
