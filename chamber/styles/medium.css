@@ -82,6 +82,9 @@
     footer hr{
         display: none;
     }  
+    footer #location p a{
+        font-size: 2em;
+    }
     
 }
 /* @media(max-width: 34.5rem){ */

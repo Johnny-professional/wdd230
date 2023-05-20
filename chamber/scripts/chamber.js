@@ -14,4 +14,8 @@ x.onclick = toggleMenu;
 let newOptions = {weekday:"long", day:"numeric", month:"long", year:"numeric"};
 document.querySelector("#head-year").textContent= new Date().toLocaleDateString("en-US", newOptions);
 
-
+const today = new Date().getDay();
+if(today ===1 || today ===2){
+    const date = document.querySelector('#header-date');
+    date.style.display = "block";
+}
