@@ -5,6 +5,11 @@
     nav {
         justify-content: center;
     }    
+    nav ul li a:hover{
+        background-color: rgb(0,0,0,.6);
+        color: var(--second-color--);
+        transform: scale(1.2);
+    }
 
     nav ul {
         display: flex;
