@@ -27,7 +27,7 @@
 
         </nav>
         <div id="Logo">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo_M.webp" alt="logo">
             <div id="miray">
                 <h1>M'Iray Location Chamber</h1>
                 <h2>Chamber Rental</h3>
@@ -41,6 +41,7 @@
                 <img src="images/whatsapp_icon.png" alt="whatsapp">
                 
             </div>
+    
             <!-- <h1>M'Iray Location Chamnber</h1> -->
             <!-- <h3>Chamber Rental</h3> -->
         </div>
@@ -48,10 +49,17 @@
     <main>
 
         <div class="card" id="hero">
-            <img src="images/inage 2.avif" alt="hero">
+            <picture>
+                <source media="(min-width: 500px)" srcset="images/wdd230-orgMedium.webp 2x" >
+                <source media="(min-width: 800px)" srcset="images/wdd230-orgLarge.webp 3x" >
+
+                
+                <img src="images/wdd230-orgSmall.webp" alt="hero" width="300" height="300">
+
+            </picture>
             <h1>Welcome to M'Iray Location</h1>
             <p><a href="#"> ▷Join us</a></p>
-        </div>
+            </div>
 
         <div class="card" id="news">
             <h2 class="h2">News Release</h2>
@@ -59,7 +67,7 @@
                 the critics and feedback from every customer to ensure 
                 the meet of our Customer needs. We have a professional 
                 team providing good customer service to respond the need 
-                of our Customer.
+                of our Customer. 
             </p>
 
         </div>
@@ -115,9 +123,10 @@
                     <img src="images/weatherIcon.png" alt="icon">
                     <h1>cloudy</h1>
                 </div>
+                <h1> <span id="temperature" >19</span>°C</h1>
                 <hr class="hr">
-                <h1>25°C</h1>
-                <p>partly Cloud from Madagascar</p>
+                <p>wind speed: <span id="speed">4.3</span>km/h</p>
+                <p>Wind Chill:<span id="windChill"></span></p>
             </div>
         </div>
 
@@ -148,5 +157,7 @@
         </div>
     </footer>
     <script src="scripts/index.js"></script>
+    <script src="scripts/windChill.js"></script>
+
 </body>
 </html>
