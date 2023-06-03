@@ -74,6 +74,37 @@
         /* transition: transform .6s; */
 
     }
+
+
+    #main-countoner{
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: 350px 1fr;
+    }
+    
+    #sidebar{
+        /* display: grid;
+        grid-template-columns: 1fr auto; */
+        /* position: absolute; */
+        width: 300px;
+        height: 100%;
+        background-color: #000;
+    }
+    
+    #sidebar p{
+        color: #eee;
+    }
+    .user{
+        border: 1px solid whitesmoke;
+        width: 250px;
+        height: 300px;
+        margin: 38px 0 20px 0;
+    }
+    .user:hover{
+        background-color: rgba(44, 44, 43, 0.6);
+        padding-left: 30%;
+        transition: .6s;
+    }
     
 }
 /* @media(max-width: 34.5rem){ */

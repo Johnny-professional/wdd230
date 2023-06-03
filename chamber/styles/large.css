@@ -68,6 +68,16 @@
     footer #image section{
         padding-left: 3rem;
     }
+    .disco{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    #main-countoner{
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        align-items: center;
+    }
     
 
 }

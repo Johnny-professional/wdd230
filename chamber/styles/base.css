@@ -339,3 +339,127 @@ footer #location{
     margin-left: 15px;
 }
 
+/* DISCOVERY PAGE CSS */
+
+/* #main-countoner{
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+} */
+#main-countoner{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#userVisit{
+    color: #f8bd0a;
+}
+
+#sidebar{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: #000;
+
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+
+#sidebar p,#sidebar div h2 {
+    color: #eee;
+}
+.whether-text{
+    color: #eee;
+
+}
+.user:hover{
+    background-color: rgba(44, 44, 43, 0.6);
+    /* padding-left: 40%; */
+    transition: .6s;
+}
+.user h1{
+    color: var(--second-color--);
+}
+
+
+#main-image{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #eee; */
+
+}
+.disco{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--second-color--);
+    border-radius: 150px 0 100px 0;
+    
+}
+
+.disco div p{
+    margin: 20px 0 30px 0;
+    text-align: center;
+    /* justify-self: center; */
+}
+
+.whether-text{
+    margin-top: 20px;
+}
+
+.description{
+    font-size: 1.5em;
+    padding: 0 10px 0 10px;
+}
+
+.comment{
+    justify-self: center;
+    margin: 20px;
+}
+.images{
+    width: 500px;
+    position: relative;
+}
+.images img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 150px 0px 150px 0px;
+
+}
+.title{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+.title:hover{
+    opacity: 1;
+    color: var(--second-color--);
+    font-size: 1.2em;
+    border-radius: 150px 0px 150px 0px;
+}
+
+
+
+
+
+
+

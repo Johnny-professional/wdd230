@@ -19,3 +19,11 @@ if(today ===1 || today ===2){
     const date = document.querySelector('#header-date');
     date.style.display = "block";
 }
+
+// discovery JS
+
+
+
+
+
+
