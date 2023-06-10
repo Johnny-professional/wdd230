@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page</title>
+    <link rel="stylesheet" href="styles/join.css">
+</head>
+<body>
+    <header id="joinHead">
+        <div>
+            <img id="logo" src="images/logo.png">
+        </div>
+        <div class="head">
+            <h1 class="h" >Rental Chamber</h1>
+            <h2 class="h">Join US</h2>
+        </div>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html" >
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" required></label>
+                <label class="top">Last Name <input type="text" name="lname" placeholder="Enter your last name" required></label>
+                <!-- <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" required></label> -->
+                <label class="top">Business Position <input type="text" name="name" placeholder="Enter your Business name"></label>
+                <label class="top">Phone Number <input type="tel" name="phone" placeholder="1234445500" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="Someones@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Date <input type="date" name="date" required></label>
+                <label class="top">type <input type="text" required></label>
+                <label class="top">Membership Level
+                    <select name="Subject" id="Subject">
+                        <option value="NP Membership is for non profit organizations and there is no fee.">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="top"> Discription Textarea<textarea name="textarea" id="" cols="30" rows="10" placeholder="Add You text here"></textarea></label>
+            </fieldset>
+            <input type="hidden" name="datetime" id="datetime" value="">
+            <input class="submitbtn" id="button" type="submit" value="Save my forum">
+
+        </form>
+    </main>
+    <footer>
+        <p> © <span class="fullYear"></span>| Mamonjisoa Johnny Roberto | from Madagascar | 🇲🇬 </p>
+        <p>Last UpDated:<span class ="date" ></span> </p>
+    </footer>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

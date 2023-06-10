@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+    <main>
+        <form method="get" action="Thank You" >
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="Phone" placeholder="12346789"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someoneEmail@gmail.com" required></label>
+                <label class="top">website <input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>course Information</legend> 
+                <div>Adience</div>
+                <label class="sbs"><input type="radio" name="Adience" value="beginner" id="">Beginner</label>
+                <label class="sbs"><input type="radio" name="Adience" value="Intermediate" id="">Intermediate</label>
+                <label class="sbs"><input type="radio" name="Adience" value="Advance" id="">Advance</label>
+                <!-- <label><input type="radio" name="Adience" value="beginner" id="">Beginner</label> -->
+            <!-- </fieldset> -->
+            <!-- <fieldset> -->
+                <legend>Softwar Need</legend>
+                <label class="sbs"><input type="checkbox" name="editing" value="yes" id="">Photo Editing</label>
+                <label class="sbs"><input type="checkbox" name="code" value="yes" id="">Coding</label>
+                <label class="sbs"><input type="checkbox" name="process" value="yes" id="">Processor</label>
+                <label class="sbs"><input type="checkbox" name="client" value="yes" id="">FTP client</label>
+
+        
+            </fieldset>
+            
+            <fieldset>
+                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label class="top">Course Subject:
+                    <select name="subjecct" id="">
+                        <option value="">Please select &#9662;</option>
+                        <option value="wdd230">wdd230</option>
+                        <option value="flow the course">flow the course</option>
+                        <option value="make payment">make payment</option>
+                        <option value="academic">academic</option>
+
+                    </select>
+                </label>
+                <label class="top">How many Authors<input type="number" name="Authors"></label>
+
+            </fieldset>
+
+            <input class="submitbtn" type="submit" value="Purpose my course">
+
+        </form>
+    </main>
+
+
+
+
+
+
+
+    <!-- <h1>HTML INPUT</h1>
+    <form action="text.php">
+        <label for="fname">first-name:</label><br>
+            <input type="text" name="fname" value=""><br>
+        
+        <label for="lname">last-name:</label><br>
+            <input type="text" name="lname" value=""><br>
+        
+        <label for="submit"><input type="submit" value="submit"></label><br>
+    </form>
+    <form action="text.php">
+        <label for="choise"><select name="" id=""></select></label><br>
+        <p>1 - true<input type="radio"></p><br>
+        <p>2 - false<input type="radio"></p><br>
+
+        <label for="choise">selct one of this</label><br>
+        <p>1 - blue<input type="checkbox"></p><br>
+        <p>1 - yellow<input type="checkbox"></p><br>
+        <p>1 - white<input type="checkbox"></p><br>
+
+        <label for="click">click here</label>
+        <p>1 - yellow<input type="button" id="btn"></p><br>
+    </form> -->
+</body>
+</html>
