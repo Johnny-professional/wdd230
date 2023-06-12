@@ -21,10 +21,10 @@
         <form method="get" action="thankyou.html" >
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" required></label>
+                <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" pattern="[a-zA-Z]" required></label>
                 <label class="top">Last Name <input type="text" name="lname" placeholder="Enter your last name" required></label>
                 <!-- <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" required></label> -->
-                <label class="top">Business Position <input type="text" name="name" placeholder="Enter your Business name"></label>
+                <label class="top">Business Position <input type="text" name="name" pattern="[a-zA-Z\s-]{7,}" placeholder="Enter your Business name"></label>
                 <label class="top">Phone Number <input type="tel" name="phone" placeholder="1234445500" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="Someones@gmail.com" required></label>
             </fieldset>
