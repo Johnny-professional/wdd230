@@ -1,0 +1,76 @@
+:root{
+    --title--:rgb(5,10,80,.8);
+    --ground--: rgb(5,10,80,.3);
+    --shodow--: 5px 5px 10px #000;
+
+}
+
+*{
+    padding: 0; 
+    margin: .5rem .3rem;
+    text-decoration: none;
+}
+body{
+    min-width: 300px;
+    max-width: 1600px;
+}
+main{
+    display: flex;
+    background-color:#eee;
+    justify-content: center;
+    justify-items: center;
+}
+
+header{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+header h1, section h2{
+    color: var(--title--);
+    font-weight: 900;
+    font-family: 'Acme', sans-serif;
+}
+header h1{
+    font-size: 3em;
+    text-shadow: 2px 2px 10px;
+    
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    background-color: var(--ground--);
+    border-radius: 20px;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #444;
+
+}
+section img{
+    border-radius: 10px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: var(--shodow--);
+}
+section p{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+footer{
+    display: flex;
+    background-color: black;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.2em;
+}
