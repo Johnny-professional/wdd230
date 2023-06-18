@@ -1,0 +1,86 @@
+{
+    "companies" : [
+        {
+            "name" : "Gastronamie",
+            "phone" : "+261 34 06 786 63",
+            "sitWeb" : "htpp://www.facebook.com",
+            "picture" : "images/lagastronomie.png",
+            "Address" : "101 Lalana Vvs",
+            "Owner" : " Razakandria john",
+            "memberShipLevel" : 5
+        },
+        {
+            "name" : "CT motors",
+            "phone" : "+261202332052",
+            "sitWeb" : "https://www.ctmotors.mg/",
+            "picture" : "images/CTMotor.png",
+            "Address" : "Joseph Raseta, Antananarivo",
+            "Owner" : " Onja rako",
+            "memberShipLevel" : 8
+        },
+        {
+            "name" : "Mada Hotel",
+            "phone" : "+26134 53 343 35",
+            "sitWeb" : "https://madahotels.com/",
+            "picture" : "images/Mada-Hotel.png",
+            "Address" : "101 Ankorondrano",
+            "Owner" : "Jose",
+            "memberShipLevel" : 6
+        },
+        {
+            "name" : "Radisson Blu Hotel",
+            "phone" : "+26134 444 78 34",
+            "sitWeb" : "https://www.booking.com/luxury",
+            "picture" : "images/Radissoa.jpg",
+            "Address" : "101 Ankorondrano",
+            "Owner" : "Radisoa",
+            "memberShipLevel" : 8
+        },
+        {
+            "name" : "Akoor'Digue",
+            "phone" : "0220932992",
+            "sitWeb" : "https://www.facebook.com/akoordigue/",
+            "picture" : "images/bussiess.png",
+            "Address" : "101 Andohatapenaka",
+            "Owner" : "Mahasoa",
+            "memberShipLevel" : 4
+        },
+        {
+            "name" : "Super U",
+            "phone" : "+261 34 53 343 35",
+            "sitWeb" : "https://www.facebook.com/p/Magasins-U-Madagascar-100083283643784/",
+            "picture" : "images/superU.jpg",
+            "Address" : "4GF9+PMX Route",
+            "Owner" : "Clark",
+            "memberShipLevel" : 6
+        },
+        {
+            "name" : "Leader Price",
+            "phone" : "+261 34 47 177 33",
+            "sitWeb" : "https://www.facebook.com/p/Magasins-U-Madagascar-100083283643784/",
+            "picture" : "images/Leader-Price.png",
+            "Address" : "Antananarivo 101",
+            "Owner" : "Jacob",
+            "memberShipLevel" : 8
+        },
+        {
+            "name" : "Tiko",
+            "phone" : "+261 34 47 177 33",
+            "sitWeb" : "https://annuaire.mg/leader-price/",
+            "picture" : "images/logo.png",
+            "Address" : "Antsirabe",
+            "Owner" : "Nicolas",
+            "memberShipLevel" : 8
+        },
+        {
+            "name" : "",
+            "phone" : "",
+            "sitWeb" : "",
+            "picture" : "images/",
+            "Address" : "Antsirabe",
+            "Owner" : "Nicolas",
+            "memberShipLevel" : 8
+        }
+    ] 
+
+}

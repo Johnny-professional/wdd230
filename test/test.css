@@ -1,0 +1,37 @@
+
+nav{
+    padding: .3rem;
+    background-color: #eee;
+  }
+  button{
+    padding: .6rem;
+    border: none;
+    margin-left: .9rem;
+    font-size: 1.8em;
+  }
+  nav lu{
+    list-style-type: none;
+    border-top: 1px solid rgb(0,0,0,.5);
+  }
+
+  nav lu li a{
+    display: block;
+    padding: .6rem 2vw;
+    color: #000;
+    text-decoration: none;
+  }
+ 
+  @media(min-width: 35rem){
+    button{
+      display: none;
+    }
+    nav lu{
+      display: flex;
+      flex-direction: row;
+  /*     border-top:; */
+    }
+  }
+  nav lu{display: none;}
+  nav lu.open{display: block;}
+
+  
