@@ -28,7 +28,7 @@
             "memberShipLevel" : 6
         },
         {
-            "name" : "Radisson Blu Hotel",
+            "name" : "Radisson Hotel",
             "phone" : "+26134 444 78 34",
             "sitWeb" : "https://www.booking.com/luxury",
             "picture" : "images/Radissoa.jpg",
@@ -40,7 +40,7 @@
             "name" : "Akoor'Digue",
             "phone" : "0220932992",
             "sitWeb" : "https://www.facebook.com/akoordigue/",
-            "picture" : "images/bussiess.png",
+            "picture" : "images/Akoor.jpg",
             "Address" : "101 Andohatapenaka",
             "Owner" : "Mahasoa",
             "memberShipLevel" : 4
@@ -65,20 +65,20 @@
         },
         {
             "name" : "Tiko",
-            "phone" : "+261 34 47 177 33",
+            "phone" : "+261 20 345 44 37",
             "sitWeb" : "https://annuaire.mg/leader-price/",
-            "picture" : "images/logo.png",
+            "picture" : "images/Tiko.jpeg",
             "Address" : "Antsirabe",
             "Owner" : "Nicolas",
             "memberShipLevel" : 8
         },
         {
-            "name" : "",
-            "phone" : "",
-            "sitWeb" : "",
-            "picture" : "images/",
-            "Address" : "Antsirabe",
-            "Owner" : "Nicolas",
+            "name" : "Gasy Landisoa",
+            "phone" : "+261 34 06 211 16",
+            "sitWeb" : "https://www.facebook.com/gasylandisoa",
+            "picture" : "images/Gasy1.png",
+            "Address" : "105 Ivato",
+            "Owner" : "Landisoa",
             "memberShipLevel" : 8
         }
     ] 
