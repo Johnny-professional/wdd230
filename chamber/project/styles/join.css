@@ -10,7 +10,7 @@
     min-width: 200px;
     max-width: 1500px;
 }
-main{
+#main-join{
     /* display: flex; */
     padding: 0 2%;
     min-height: 20em;
@@ -18,7 +18,7 @@ main{
     /* align-items: center; */
    
 }
-header{
+#joinHead{
     display: flex;
     flex-direction: column;
     background-color: var(--second-color--);
@@ -27,12 +27,12 @@ header{
 
 }
 
-header div{
+/* header .head{
     text-align: center;
 }
-header div img{
+header .head img{
     width: 200px;
-}
+} */
 
 form fieldset{
     margin: 2rem 0;
@@ -87,20 +87,20 @@ form label.top input:required:valid{
     border: 4px solid  rgb(2, 2, 141);
 }
 
-@media (min-width: 32rem) {
+/* @media (min-width: 32rem) {
     header {
         display: grid;
         grid-template-columns: 300px 1fr;
         padding: 20px;
     }
-}
+} */
 @media(min-width: 40rem) {
     .h {
         font-size: 2.2em;
     }
 }
 
-footer{
+/* footer{
     text-align: center;
     background-color: var(--first-color--);
 }
@@ -109,4 +109,4 @@ footer{
 }
 footer p{
     color: whitesmoke;
-}
+} */

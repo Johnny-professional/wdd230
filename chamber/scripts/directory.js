@@ -9,8 +9,8 @@ async function getCompaniesData() {
 }
 
 function displayCompanies(companies) {
-  const cards = document.querySelector('div.cards');
-  
+  const Gridcards = document.querySelector('#directory_cards div');
+  // const Listcards = document.querySelector('#directory_cards .ListV');
   companies.forEach((company) => {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
@@ -60,24 +60,25 @@ function displayCompanies(companies) {
 
 
     
-    cards.appendChild(card);
+    Gridcards.appendChild(card);
+    // Listcards.appendChild(card);
   });
 }
 
-const gridbtn = document.querySelector('#grid');
-const listbtn = document.querySelector('#list');
-const display = document.querySelector('#directory-cards');
+// const gridView = document.querySelector('.gridV');
+// const listView =  document.querySelector('.listV');
+// const gridBtn = document.querySelector('.clickGrid');
+// const listBtn = document.querySelector('.clickList');
+// // let UseGrid = true;
 
-gridbtn.addEventListener("click", () => {
-  display.classList.add('grid');
-  display.classList.remove('list');
-});
-
-listbtn.addEventListener('click', () => {
-  display.classList.add('list');
-  display.classList.remove('grid');
-})
-
+// gridBtn.addEventListener((onclick) = function(){
+//   gridView.style.display = 'flex';
+//   listView.style.display = 'none';
+// });
+// listBtn.addEventListener((onclick) = function(){
+//   listView.style.display = 'flex';
+//   gridView.style.display = 'none';
+// })
 
 getCompaniesData();
 
