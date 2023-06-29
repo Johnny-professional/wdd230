@@ -1,4 +1,6 @@
 const file = './data.json';
+const Gridcards = document.querySelector('.gridV');
+
 
 async function getCompaniesData() {
   const response = await fetch(file);
@@ -9,7 +11,6 @@ async function getCompaniesData() {
 }
 
 function displayCompanies(companies) {
-  const Gridcards = document.querySelector('#directory_cards div');
   // const Listcards = document.querySelector('#directory_cards .ListV');
   companies.forEach((company) => {
     let card = document.createElement('section');
@@ -65,11 +66,38 @@ function displayCompanies(companies) {
   });
 }
 
-// const gridView = document.querySelector('.gridV');
-// const listView =  document.querySelector('.listV');
-// const gridBtn = document.querySelector('.clickGrid');
-// const listBtn = document.querySelector('.clickList');
-// // let UseGrid = true;
+const gridBtn = document.querySelector('.clickGrid');
+const listBtn = document.querySelector('.clickList');
+
+gridBtn.addEventListener('click', () => {
+  Gridcards.classList.add('gridV');
+  Gridcards.classList.remove('listV');
+})
+
+listBtn.addEventListener('click', () => {
+  Gridcards.classList.add('listV');
+  Gridcards.classList.remove('gridV');
+})
+
+
+
+
+// let UseGrid = true;
+
+// function UseGrid() {
+//   UseGrid = true;
+//   gridView.style.display = 'flex';
+//   listView.style.display = 'none';
+// }
+
+// function UseList() {
+//   UseList = false;
+//   listView.style.display = 'flex';
+//   gridView.style.display = 'none';
+// }
+
+// gridBtn.onclick = function(){UseGrid()};
+// listBtn.onclick = function(){UseList()};
 
 // gridBtn.addEventListener((onclick) = function(){
 //   gridView.style.display = 'flex';
