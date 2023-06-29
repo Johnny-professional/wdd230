@@ -20,6 +20,8 @@ function displayCompanies(companies) {
     let p2 = document.createElement('a');
     let p3 = document.createElement('a');
     let p4 = document.createElement('p');
+    let br = document.createElement('br');
+    let hr = document.createElement('hr');
 
     let logo = document.createElement('img');
     // let link = document.createElement('a');
@@ -28,7 +30,11 @@ function displayCompanies(companies) {
     p.textContent = `Owner: ${company.Owner}`;
     p1.textContent = `Address: ${company.Address}`;
     p2.textContent = `${company.sitWeb}`;
-    p3.textContent = `Phone: ${company.phone}`
+    p3.textContent = `Phone: ${company.phone}`;
+    br.innerHTML
+    hr.innerHTML
+
+
     // p4.textContent
 
     
@@ -44,6 +50,7 @@ function displayCompanies(companies) {
     p2.setAttribute('src', company.sitWeb);
     p3.setAttribute('class', 'add');
     p3.setAttribute('src', company.phone);
+    hr.setAttribute('class', 'hr');
 
 
     p3.setAttribute('class', 'add');
@@ -56,7 +63,9 @@ function displayCompanies(companies) {
     card.appendChild(p);
 
     card.appendChild(logo);
+    card.append(hr);
     card.appendChild(p2);
+    card.append(br);
     card.appendChild(p3);
 
 
