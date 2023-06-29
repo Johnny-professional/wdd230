@@ -369,6 +369,9 @@ footer #location{
     text-align: center;
     margin: 20px 0 20px 0;
 }
+.user hr{
+    margin: 10px 15px;    
+}
 
 
 #sidebar p,#sidebar div h2 {
