@@ -1,6 +1,5 @@
 @media(min-width: 60rem){
     nav button{display: none;}
-   
 
     nav {
         justify-content: center;

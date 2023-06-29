@@ -324,6 +324,15 @@ hr{
 footer #name{
     border-top: 1.5px solid rgba(252, 207, 8, 0.3);
 }
+footer #image img{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px black;
+}
+#name p .date {
+    color: yellow;
+}
 
 footer #location p a{
     /* font-size: 2em; */
@@ -337,6 +346,7 @@ footer #location{
 }
 #footer-icon img{
     margin-left: 15px;
+    
 }
 
 /* DISCOVERY PAGE CSS */
@@ -464,10 +474,10 @@ footer #location{
 
 #main-join{
     /* display: flex; */
+    flex-direction: row;
     padding: 0 2%;
     min-height: 20em;
-    /* justify-content: center; */
-    /* align-items: center; */
+    /* justify-self: center; */
    
 }
 #joinHead{
