@@ -37,7 +37,7 @@
         grid-template-columns: 1fr 2fr 1fr;
     }
     #Logo #miray,#Logo #icon{
-        margin-left: 10rem;
+        margin-left: 5rem;
     }
     main #event{
         grid-row: 1/2;
