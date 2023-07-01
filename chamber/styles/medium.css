@@ -79,6 +79,9 @@
         /* transition: transform .6s; */
 
     }
+    footer #image section p{
+        font-size: 1.3em;
+    }
 
 
     #main-countoner{
