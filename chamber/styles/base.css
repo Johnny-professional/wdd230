@@ -287,6 +287,10 @@ main #spotlight .spot1-2{
     display: inline-flex;
     
 }
+#weather-icon img{
+    background-color: rgb(0,0,0,.4);
+    border-radius: 50%;
+}
 
 .joinUs{
     /* background-color: red; */
@@ -429,6 +433,9 @@ footer #location{
 .whether-text{
     margin-top: 20px;
 }
+#weather-icon h1{
+    font-size: 1.2em;
+}
 
 .description{
     font-size: 1.5em;
@@ -440,7 +447,7 @@ footer #location{
     margin: 20px;
 }
 .images{
-    width: 500px;
+    /* width: 380px; */
     position: relative;
 }
 .images img{
