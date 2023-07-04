@@ -5,7 +5,6 @@
     --head-color:rgb(43, 42, 41);
     --light: #eee;
     --zebra: hsl(46, 81%, 55%);
-    
 }
 table{
     border: thin solid var(--border);

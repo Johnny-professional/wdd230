@@ -4,6 +4,12 @@
     /* --third-color--:; */
     --shadow--: 5px 5px 10px #6f7364; 
     --text-color--: #ffffff;
+    --border: rgba(45, 46, 45, 0.4);
+    --shadow:10px 5px 15px rgba(107, 104, 104, 0.6);
+    --main-color: rgb(231, 191, 13);
+    --head-color:rgb(43, 42, 41);
+    --light: #eee;
+    --zebra: hsl(46, 81%, 55%);
 }
 * {
     padding: 0;
@@ -235,7 +241,7 @@ main #hero{
 }
 
 
-#hero h1{
+#hero h2{
     top: 450px;
     right: 42%;
     background-color: rgb(0,0,0,.4);
@@ -467,14 +473,20 @@ footer #location{
 
 /* JOIN PAGE  FOR THE CHAMBER PROJECT */
 
-#main-join{
-    /* display: flex; */
-    flex-direction: row;
+#main-Join{
+    /* display: flex;
+    flex-direction: row; */
     padding: 0 2%;
     min-height: 20em;
     /* justify-self: center; */
    
 }
+#main-Join div{
+    align-items: center;
+    padding: 10px;
+}
+
+
 #joinHead{
     display: flex;
     flex-direction: column;
@@ -484,12 +496,46 @@ footer #location{
 
 }
 
-/* header .head{
-    text-align: center;
+table{
+    border: thin solid var(--border);
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: var(--shadow);
+    
 }
-header .head img{
-    width: 200px;
-} */
+
+caption{
+    caption-side: bottom;
+    padding: 15px;
+}
+
+th, td{
+    padding: 7px 25px;
+    border: 1px solid hsla(0,0%,33%,.3);
+}
+thead{
+    background-color: var(--head-color);
+}
+.col{
+    background-color: black;
+}
+
+th{
+    font-size: 1.3em;
+    color: whitesmoke;
+    font-weight: 400px;
+}
+td{
+    font-size: 1em;
+    font-weight: bold;
+}
+tr:first-child th{
+    color: var(--main-color);
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--zebra);
+}
 
 form fieldset{
     margin: 2rem 0;

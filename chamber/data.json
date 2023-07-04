@@ -7,7 +7,7 @@
             "picture" : "images/lagastronomie.png",
             "Address" : "101 Lalana Vvs",
             "Owner" : " Razakandria john",
-            "memberShipLevel" : 5
+            "memberShipLevel" : "Silver🥈"
         },
         {
             "name" : "CT motors",
@@ -16,7 +16,7 @@
             "picture" : "images/CTmotors.png",
             "Address" : "Joseph Raseta",
             "Owner" : " Onja rako",
-            "memberShipLevel" : 8
+            "memberShipLevel" : "Gold 🥇"
         },
         {
             "name" : "Mada Hotel",
@@ -25,7 +25,7 @@
             "picture" : "images/Mada-Hotel.png",
             "Address" : "101 Ankorondrano",
             "Owner" : "Jose",
-            "memberShipLevel" : 6
+            "memberShipLevel" : "Silver🥈"
         },
         {
             "name" : "Radisson Hotel",
@@ -34,7 +34,7 @@
             "picture" : "images/Radissoa.jpg",
             "Address" : "101 Ankorondrano",
             "Owner" : "Radisoa",
-            "memberShipLevel" : 8
+            "memberShipLevel" : "Gold 🥇"
         },
         {
             "name" : "Akoor'Digue",
@@ -43,7 +43,7 @@
             "picture" : "images/Akoor.jpg",
             "Address" : "101 Andohatapenaka",
             "Owner" : "Mahasoa",
-            "memberShipLevel" : 4
+            "memberShipLevel" : "Silver🥈"
         },
         {
             "name" : "Super U",
@@ -52,7 +52,7 @@
             "picture" : "images/superU.jpg",
             "Address" : "4GF9+PMX Route",
             "Owner" : "Clark",
-            "memberShipLevel" : 6
+            "memberShipLevel" : "Gold 🥇"
         },
         {
             "name" : "Leader Price",
@@ -61,7 +61,7 @@
             "picture" : "images/Leader-Price.png",
             "Address" : "Antananarivo 101",
             "Owner" : "Jacob",
-            "memberShipLevel" : 8
+            "memberShipLevel" : "Silver🥈"
         },
         {
             "name" : "Tiko",
@@ -70,7 +70,7 @@
             "picture" : "images/Tiko.jpeg",
             "Address" : "Antsirabe",
             "Owner" : "Nicolas",
-            "memberShipLevel" : 8
+            "memberShipLevel" : "Bronze 🥉"
         },
         {
             "name" : "Gasy Landisoa",
@@ -79,7 +79,7 @@
             "picture" : "images/Gasy1.png",
             "Address" : "105 Ivato",
             "Owner" : "Landisoa",
-            "memberShipLevel" : 8
+            "memberShipLevel" : "Gold 🥇"
         }
     ] 
 

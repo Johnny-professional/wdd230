@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roberto Johnny BYU student, this is the Chamber Commerce page For WDD 230 Project(Join page)">
     <title>Join Page</title>
     <!-- <link rel="stylesheet" href="styles/join.css"> -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="shortcut icon" href="images/favicon(1).ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -15,7 +16,7 @@
 <body>
     <header>
         <nav> 
-            <button id="hamburgerMenu"><span>&#9776</span><span>X</span></button>
+            <button id="hamburgerMenu"><span>&#9776;</span><span>X</span></button>
             <ul id="menu">
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
@@ -28,7 +29,7 @@
             <img src="images/logo_M.webp" alt="logo">
             <div id="miray">
                 <h1>M'Iray Location Chamber</h1>
-                <h2>Chamber Rental</h3>
+                <h2>Chamber Rental</h2>
                 <div id="header-date">
                     <p >🤝🏼 Join us on:<span id="head-year"></span></p>
                 </div>
@@ -43,39 +44,105 @@
     </header>
 
     <main id="main-Join">
-        <form method="get" action="thankyou.html" >
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" pattern="[a-zA-Z]" required></label>
-                <label class="top">Last Name <input type="text" name="lname" placeholder="Enter your last name" required></label>
-                <label class="top">Business Position <input type="text" name="name" pattern="[a-zA-Z\s-]{7,}" placeholder="Enter your Business name"></label>
-                <label class="top">Phone Number <input type="tel" name="phone" placeholder="1234445500" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="Someones@gmail.com" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Storm Information</legend>
-                <label class="top">Date <input type="date" name="date" required></label>
-                <label class="top">type <input type="text" required></label>
-                <label class="top">Membership Level
-                    <select name="Subject" id="Subject">
-                        <option value="NP Membership is for non profit organizations and there is no fee.">NP Membership is for non profit organizations and there is no fee.</option>
-                        <option value="Bronze Membership">Bronze Membership</option>
-                        <option value="Silver Membership">Silver Membership</option>
-                        <option value="Gold Membership">Gold Membership</option>
-                    </select>
-                </label>
-                <label class="top"> Discription Textarea<textarea name="textarea" id="" cols="30" rows="10" placeholder="Add You text here"></textarea></label>
-            </fieldset>
-            <input type="hidden" name="datetime" id="datetime" value="">
-            <input class="submitbtn" id="button" type="submit" value="Save my forum">
+        <!-- <h2>Join Us Today</h2> -->
+        <div>
+            <form method="get" action="thankyou.html" >
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name <input type="text" name="fname" placeholder="Enter your fisrt name" pattern="[a-zA-Z]" required></label>
+                    <label class="top">Last Name <input type="text" name="lname" placeholder="Enter your last name" required></label>
+                    <label class="top">Business Position <input type="text" name="name" pattern="[a-zA-Z]+" placeholder="Enter your Business name"></label>
+                    <label class="top">Phone Number <input type="tel" name="phone" placeholder="1234445500" required></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="Someones@gmail.com" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="top">Date <input type="date" name="date" required></label>
+                    <label class="top">type <input type="text" required></label>
+                    <label class="top">Membership Level
+                        <select name="Subject" id="Subject">
+                            <option value="NP Membership is for non profit organizations and there is no fee.">NP Membership is for non profit organizations and there is no fee.</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label class="top"> Discription Textarea<textarea name="textarea" id="" cols="30" rows="10" placeholder="Add You text here"></textarea></label>
+                </fieldset>
+                <input type="hidden" name="datetime" id="datetime" value="">
+                <input class="submitbtn" id="button" type="submit" value="Save my forum">
 
-        </form>
+            </form>
+        </div>
+        <div>
+            <table>
+                <caption>The choise is yours so Buy now</caption>
+                <thead>
+                  <tr>
+                    <th colspan="5" scope="colgroup">Membership Level</th>
+                  </tr>
+                  <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th class="col" scope="col">NP 🎁</th>
+                    <th class="col" scope="col">Bronze 🥉</th>
+                    <th class="col" scope="col">Silver🥈</th>
+                    <th class="col" scope="col">Gold 🥇</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> Monthly Price</td>
+                    <td> FREE</td>
+                    <td> 25$ </td>
+                    <td> 50$ </td>
+                    <td> 100$ </td>
+                  </tr>
+                  <tr class="marque">
+                    <td >Online store</td>
+                    <td>✔️</td>
+                    <td>✔️ </td>
+                    <td>✔️ </td>
+                    <td>✔️ </td>
+                  </tr>
+                  <tr>
+                    <td>stuff Account</td>
+                    <td>❌ </td>
+                    <td>✔️</td>
+                    <td>✔️ </td>
+                    <td>✔️ </td>
+                  </tr>
+                  <tr>
+                    <td>Support 7/7</td>
+                    <td>❌ </td>
+                    <td> 10%</td>
+                    <td> 50% </td>
+                    <td>100% </td>
+                  </tr>
+                  <tr>
+                    <td>Unlimited Pro</td>
+                    <td>❌ </td>
+                    <td>✔️</td>
+                    <td>✔️ </td>
+                    <td>✔️ </td>
+                  </tr>
+                  <tr>
+                    <td>+ Bonus 🎁</td>
+                    <td>❌ </td>
+                    <td>❌</td>
+                    <td>❌ </td>
+                    <td>✔️ </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
     </main>
 
     <footer>
         <div id="image">
             <img src="images/logo.png" alt="logo">
-            <section><h1>M'Iray Location</h1>
+            <section>
+                <h2>M'Iray Location</h2>
                 <p>Chamber Rental</p></section>
         </div>
         <hr>
@@ -96,8 +163,6 @@
         </div>
     </footer>
     <script src="scripts/index.js"></script>
-    <script src="scripts/windChill.js"></script>
-    <script src="scripts/weatherApi.js"></script>
     <script src="scripts/join.js"></script>
 </body>
 </html>
