@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+:root{
+    --first_color-- : #FEF4C0;
+    --second_color-- : #FDB10B;
+    --third_color-- : #FE8535;
+    --forth_color-- : #FD292F;
+    --fifth_color-- : #B20000;
+    --shadow-- : 5px 5px 10px #444;
+    --font-- :'Acme', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background-image: url(/finalproject/images/fraisered.webp);
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+header #main_head{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   background-color: rgb(0%,0%,0%,.6);
+}
+#main_head.humb{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#main_head.label{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.logo{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.humb{
+    display: block;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.humb button{
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: .5em;
+    padding-top: 10px;
+}
+.label label input{
+    background-color: rgb(0%, 0%, 0%,.4);
+    color: white;
+}
+.logo h1{
+    font-size: 5em;
+    margin: 0;
+    font-family: var(--font--);
+}
+.logo h2{
+    font-size: 2.4em;
+    margin: 0;
+    font-family: var(--font--);
+
+}
+
+.logo img, .footlogo img{
+    width: 200px;
+}
+.label form label, .title{
+    color: white;
+}
+.icon{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon a img:hover {
+    transform: scale(1.5);
+    transition: .3s;
+}
+
+#menu{
+    margin: 10px;
+    
+}
+
+
+#menu li a{
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    
+
+}
+#menu li a:hover {
+    color: var(--second_color--);
+    transition: .2s;
+}
+
+#menu li{
+    background-color: rgb(0, 0, 0,.7);
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgb(17%,20%,10%,.6);
+    z-index: 1;
+}
+@media(max-width: 55rem){
+    #hamburgerMenu{
+        display: block;
+    }
+    #menu{
+        position: absolute;
+        width: 70%;
+        left: -100%;
+        /* gap: 0; */
+        text-align: center;
+        transition: 0.4s;
+    } 
+    #menu.active{
+        left: 0;
+    }
+    nav ul{display: block;}
+    
+    #hamburgerMenu .span:nth-child(1){display: block;}
+    #hamburgerMenu .span:nth-child(2){display: none;}
+    
+    #hamburgerMenu.active .span:nth-child(1){display: none;}
+    #hamburgerMenu.active .span:nth-child(2){
+        display: block;
+        transition: .3s;
+    }
+}
+
+
+
+
+/* --------------MAIN STYLES --------------*/
+
+main{
+    /* background-image: url(/finalproject/images/mealon.jpg); */
+
+    text-decoration: none;
+}
+#mainCountener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+#mainCountener h2{
+    color: var(--fifth_color--);
+    padding: 20px 0;
+    font-size: 2em;
+    font-family: var(--font--);
+}
+.section{
+    /* background-color: var(--first_color--); */
+    background-color: rgb(254,244,192,.7);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid var(--second_color--);
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px ;
+    align-self: center;
+}
+.card img{
+    width: 250px;
+}
+.card h3{
+    font-weight: bold;
+    color: var(--fifth_color--);
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-family: var(--font--);
+}
+
+#weather{
+    /* width: 100%; */
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0,.6);
+} 
+.h2, #weather div p{
+    color: white;
+    padding: 10px 0;
+}
+#weather h2{
+    color: var(--third_color--);
+    padding: 10px 0;
+    font-size: 1.9em;
+    font-family: var(--font--);
+}
+#description, #speed, #windChill, #temperature{
+    color: var(--second_color--);
+}
+.hero{
+    background-image: url(/finalproject/images/water3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.hero_image{
+    width: 100%;
+}
+.hero_image img{
+    width: 100%;
+}
+.forcastweather section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 2px solid var(--second_color--);
+}
+.forcastweather .lastsec{
+    border-bottom: 0 ;
+}
+.forcastweather section h4{
+    color: var(--second_color--);
+} 
+
+.card{
+    position: relative;
+}
+.card h4 a{
+    /* font-size: 1.3em; */
+    background-color: rgb(0%, 0%, 0%,.5);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    animation-name: textzoom;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.card h4{
+    font-size: 1.5em;
+    position: absolute;
+    top: 250px;
+    
+}
+@keyframes textzoom{
+    0%{
+        font-size: .9em;
+        color: var(--first_color--);
+    }
+    50%{
+        font-size: 1.3em;
+        color: var(--third_color--);
+    }
+    75%{
+        font-size: 1.6em;
+        color: var(--second_color--);
+    }
+}
+
+
+
+/*------------- FOOTER STYLES ------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #263248;
+}
+
+#footerIcon, #name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textcolor {
+    color: white;
+}
+.footlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footerIcon .icon a{
+    margin: 15px;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map a{
+    color: var(--second_color--);
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.map iframe{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+
+/* -----------FRESH PAGE--------- */
+
+
+.mainfresh {
+    background-image: url(/finalproject/images/mealon.jpg);
+    margin: 0;
+    /* width: 100%; */
+}
+.mainfresh div{
+    background-color: rgb(0%, 0%, 0%,.5);
+}
+
+form fieldset{
+    color: var(--third_color--);
+    border:2px solid var(--third_color--);
+    margin: 2rem 0;
+    
+}
+
+form  fieldset legend{
+    color: var(--third_color--);
+    padding: 0 1.3rem;
+    margin: 0.5rem;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.firstfield{
+    display: flex;
+    flex-direction: column;
+}
+.firstfield label{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem .5rem;
+}
+
+
+
+
+
+
+
+
+
+
