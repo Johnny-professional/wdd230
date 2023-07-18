@@ -16,8 +16,8 @@
             <nav class="humb">
                 <button id="hamburgerMenu"><span>&#9776;</span></button>
                 <ul id="menu">
-                    <li><a href="#"  class="link">Home</a></li>
-                    <li><a href="#" class="link">Fresh</a></li>
+                    <li><a href="index.html"  class="link">Home</a></li>
+                    <li><a href="fresh.html" class="link">Fresh</a></li>
                     <li><a href="#" class="link">About</a></li>
                     <li><a href="#" class="link">Healthy</a></li>
                 </ul>
@@ -41,18 +41,18 @@
         </div>
     </header>
     <main class="mainfresh">
-        <div>
-            <form>
+        <div class=" freshCountener">
+            <form id="form">
                 <fieldset class="firstfield">
-                    <legend>Information</legend>
-                    <label class="info"> First Name <input type="text" name="name" id="mame" placeholder="Enter you Name"></label>
+                    <legend>Information</legdsend>
+                    <label class="info"> First Name <input type="text" name="name" id="name" placeholder="Enter you Name" required></label>
                     <label class="info"> Email <input type="email" name="email" id="email" placeholder="Sample@gmail.com"></label>
                     <label class="info">Phone <input type="tel" name="tel" id="tel" placeholder="123-121-455"></label>
                 </fieldset>
                 <fieldset class="secondfield">
                     <legend>Your favorite drinks </legend>
                     <label>First Fruit
-                        <select name="Subject" id="Subject">
+                        <select name="Subject" id="Subject1">
                             <option value="Selet Fruit">Seled Fruit</option>
                             <option value="Apple">Apple</option>
                             <option value="Apricot">Apricot</option>
@@ -72,7 +72,7 @@
                         </select>
                     </label>
                     <label>Second Fruit
-                        <select name="Subject" id="Subject">
+                        <select name="Subject" id="Subject2">
                             <option value="Selet Fruit">Seled Fruit</option>
                             <option value="Lemon">Lemon</option>
                             <option value="Lime">Lime</option>
@@ -93,7 +93,7 @@
                         </select>
                     </label>
                     <label>Third Fruit
-                        <select name="Subject" id="Subject">
+                        <select name="Subject" id="Subject3">
                             <option value="Selet Fruit">Seled Fruit</option>
                             <option value="Tangerine">Tangerine</option>
                             <option value="Tomato">Tomato</option>
@@ -106,14 +106,62 @@
                             <option value="Kiwifruit">Kiwifruit</option>
                         </select>
                     </label>
+                    <label >special instructions
+                        <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Your note here"></textarea>
+
+                    </label>
+
                 </fieldset>
+                <input class="submitbtn" id="FormBtn" type="submit" value="Send Your Order">
             </form>
+        </div>
+        <div class="UserCommand">
+            <h2 class="welcoming">We Provide You the best Juice</h2>
+            <section class="userOrder">
+                <h3 class="userName"></h3>
+                <p class="email"> <span class="nutri"></span></p>
+                <p class="phone"></p>
+                <p class="f1"></p>
+                <p class="f2"></p>
+                <p class="f3"></p>
+                <p class="description"></p>
+                <p class="total"></p>
+                
+
+            </section>
+            
+        </div>
+        <div class="tableCountener">
+            <table>
+                <thead>
+                    <tr class="trhead">
+                        <th colspan="1" scope="colgroup">fruit</th>
+                        <th colspan="5" scope="colgroup">nutritions</th>
+                    </tr>
+                    <tr class="trtitle">
+                        <th>name</th>
+                        <!-- <th>family</th> -->
+                        <th>carbohydrates</th>
+                        <th>protein</th>
+                        <th>fat</th>
+                        <th>calories</th>
+                        <th>sugar</th>
+                    </tr>
+                    <tbody class="table_body">
+                       
+                    </tbody>
+                </thead>
+            </table>
         </div>
     </main>
    
     <footer>
         <div class="footlink">
-            <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error suscipit asperiores quibusdam e numquam quod modi illum vero?</p>
+            <h2>For more</h2>
+            <p><a href="">Command</a></p>
+            <p ><a href="">Contac Us</a></p>
+            <p><a href="">About Us</a></p>
+            <p ><a href="">special drinks</a></p>
         </div>
         <div class="map">
             <a href="https://www.google.com/maps/d/edit?mid=1QcHpc6mwX5k47vGmKNANN0NOkoMHYac&usp=sharing">Bountiful location📍</a>
@@ -139,10 +187,12 @@
 
 
     </footer>
-    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/index.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/forcast.js"></script>
+    <script src="scripts/forcast.js"></script> -->
+    <script src="scripts/table.js"></script>
+    <script src="scripts/Order.js"></script>
     
     
 </body>

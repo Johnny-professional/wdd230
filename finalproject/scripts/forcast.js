@@ -1,11 +1,49 @@
-//const forcasturl = "https://api.openweathermap.org/data/2.5/forecast/hourly?lat=33.158092&lon=-117.350594&units=metric&appid=27b46718914c1af76842268cb9d3c1e4"
-const forcasturl = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=-18.7915&lon=47.4740&appid=07ff7fade2674467cd0a7eeaa8be2853"
-async function apiforcastFatch() {
-    const response = await fetch(forcasturl);
+const apiKey = "58c96a7989501d42676ed42af207db7c";
+const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=metric&appid=${apiKey}`;
+
+// const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=-18.7915&lon=47.4740&cnt=4&appid=58c96a7989501d42676ed42af207db7c";
+async function getWeatherForecast() {
+//   const url = `${forecastUrl}?key=${apiKey}&q=${city}&format=json`;
+
+  try {
+    const response = await fetch(apiUrl);
     const data = await response.json();
-    console.log(data);
+
+    // const forecastData = data.list.slice(0, 8 * 3);
+    const forecastData = data.list.filter((forecast, index) => index % 8 === 0)
+    // console.log(forecastData);
+    displayWeatherForcast(forecastData);
+  } catch(error) {
+    console.log('Something went wrong:', error);
+  }
 }
-apiforcastFatch();
+
+function displayWeatherForcast(forecastData){
+
+  const forcastweather = document.querySelector(".forcastweather");
+  
+  forecastData.forEach( (forecast) => {
+    const date = new Date(forecast.dt *1000);
+    const day = date.toLocaleDateString('en-US', {weekday: 'long'});
+    const temp = forecast.main.temp;
+    const description = forecast.weather[0].description;
+    const icon = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`
+
+    const section = document.createElement("section")
+
+    section.innerHTML =`  
+    <h4 class="fordays">${day}</h4>
+    <img src="${icon}" alt="${description}">
+    <p class="fortemp">temperature: ${temp} °C</p>
+    <p class="forcastdescript">${description}</p>`
+
+    forcastweather.appendChild(section);
+  });
+
+}
+
+getWeatherForecast();
+
 
 
 

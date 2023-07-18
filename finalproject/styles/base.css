@@ -155,14 +155,10 @@ header #main_head{
     }
 }
 
-
-
-
 /* --------------MAIN STYLES --------------*/
 
 main{
     /* background-image: url(/finalproject/images/mealon.jpg); */
-
     text-decoration: none;
 }
 #mainCountener{
@@ -197,7 +193,7 @@ main{
 .card img{
     width: 250px;
 }
-.card h3{
+.card h3, .tofresh h2{
     font-weight: bold;
     color: var(--fifth_color--);
     margin: 20px 0;
@@ -252,11 +248,14 @@ main{
 .forcastweather section h4{
     color: var(--second_color--);
 } 
+.forcastweather section .forcastdescript{
+    color: var(--fifth_color--);
+}
 
-.card{
+.card, .tofresh{
     position: relative;
 }
-.card h4 a{
+.card h4 a, .tofresh h4 a{
     /* font-size: 1.3em; */
     background-color: rgb(0%, 0%, 0%,.5);
     color: white;
@@ -273,6 +272,29 @@ main{
     top: 250px;
     
 }
+
+.tofresh{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.tofresh picture img{
+    width: 100vw;
+    margin-top: 10px;
+}
+.tofresh h4{
+    position: absolute;
+    font-size: 1.6em;
+    top: 250px;
+
+}
+.tofresh p{
+    font-size: 1.2em;
+}
+
+
 @keyframes textzoom{
     0%{
         font-size: .9em;
@@ -303,7 +325,30 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
+.footlink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footlink h2{
+    color: var(--third_color--);
+    font-size: 1.4;
+    text-decoration-line: underline;
+    font-family: var(--font--);
+}
+.footlink p a{
+    color: white;
+    font-size: 1.2em;
+}
+.footlink p{
+    margin: 5px 0;
+}
+footer p a:hover{
+    color: var(--third_color--);
+}
+
 .textcolor {
     color: white;
 }
@@ -353,6 +398,12 @@ form fieldset{
     margin: 2rem 0;
     
 }
+#form{
+    display: block;
+    align-items: center;
+    width: 600px;
+    
+}
 
 form  fieldset legend{
     color: var(--third_color--);
@@ -361,15 +412,234 @@ form  fieldset legend{
     font-size: 1.3em;
     font-weight: 700;
 }
-.firstfield{
+.firstfield, .secondfield{
     display: flex;
     flex-direction: column;
 }
-.firstfield label{
+form fieldset legend{
+    padding: 0 1.3rem;
+    margin: 0.5rem;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.firstfield label, .secondfield label{
     display: flex;
     flex-direction: column;
     padding: 1rem .5rem;
 }
+.firstfield label input, .secondfield label select, #textarea{
+    padding: .8rem;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+.freshCountener{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.secondfield label select{
+    display: flex;
+}
+select, #textarea{  
+    margin: 10px;
+    /* padding: .6rem; */
+    width: 50%;
+}
+.secondfield label{
+    text-decoration: none;
+    color: var(--second_color--);
+    text-transform: uppercase;
+    font-family: var(--font--);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#FormBtn{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2em;
+    padding: .6rem;
+    background-color: var(--second_color--);
+    width: 100%;    
+}
+
+.userOrder p, .userOrder{
+    color: white;
+}
+
+
+
+.tableCountener{
+    width: 100%;
+}
+
+
+table{
+    /* border: thin solid var(--forth_color--); */
+    margin: 10px auto;
+    border-collapse: collapse;
+    width: 100%
+
+    /* box-shadow: var(--shadow); */
+    
+}
+.UserCommand { 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px auto;
+    padding: 2em;
+}
+.UserCommand h2{
+    color: var(--second_color--);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: var(--font-- );
+}
+.userOrder{
+    border: 1px solid var(--third_color--);
+    width: 100%;
+    height: auto;
+}
+.userOrder p, .userName{
+    font-size: 1.3;
+    padding: 10px;
+}
+
+
+th, td{
+    padding:5px;
+    border: 1px solid hsla(0,0%,33%,.3);
+}
+thead .trhead{
+    background-color: var(--fifth_color--);
+}
+thead .trtitle{
+    background-color: var(--forth_color--);
+}
+
+th{
+    font-size: 1.3em;
+    color: whitesmoke;
+    font-weight: 400px;
+}
+tr td{
+    color: white;
+    text-align: center;
+}
+td{
+    font-size: 1em;
+    font-weight: bold;
+}
+tr:first-child th{
+    color: white;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(254,244,192,.8);
+}
+tbody tr:nth-child(odd) td{
+    color: black;
+}
+
+
+/* ------------ABOUT US------------ */
+/* #mainAbout{
+
+} */
+.aboutCountener{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+
+}
+.historical{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 250px;
+    background-color: rgba(255, 218, 8, 0.8);
+    border: black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+}
+.historical h2{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--fifth_color--);
+    font-family: var(--font--);
+    
+
+}
+.aboutMap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.aboutMap iframe{
+    margin: 20px 0;
+}
+.aboutMap a{
+    background-color: rgb(0%, 0%, 0%,.5);
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2em;
+}
+
+#mainAbout{
+    background-image: url(/finalproject/images/Carlsbad.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.historical img{
+    border-radius: 20px;
+    margin: 10px 0;
+    border: 1px solid #555;
+}
+.historical p span a{
+    color: var(--fifth_color--);
+    font-size: 1.1em;
+    font-family:sans-serif, Arial, Helvetica;
+}
+.historical p{
+    font-family:sans-serif, Arial, Helvetica;
+}
+.historical p span a:hover{
+    color: white;
+}
+.nutri{
+    color: var(--second_color--);
+    font-size: 1.2em;
+}
+.totalNutri{
+    color: var(--second_color--);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+
+ 
+
+
+
+
+
 
 
 

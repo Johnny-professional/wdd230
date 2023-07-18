@@ -16,14 +16,14 @@
             <nav class="humb">
                 <button id="hamburgerMenu"><span>&#9776;</span></button>
                 <ul id="menu">
-                    <li><a href="#"  class="link">Home</a></li>
-                    <li><a href="#" class="link">Fresh</a></li>
-                    <li><a href="#" class="link">About</a></li>
-                    <li><a href="#" class="link">Healthy</a></li>
+                    <li><a href="index.html"  class="link">Home</a></li>
+                    <li><a href="fresh.html" class="link">Fresh</a></li>
+                    <li><a href="about.html" class="link">About</a></li>
+                    <li><a href="fresh.html" class="link">Healthy</a></li>
                 </ul>
             </nav>
             <div class="label">
-                <form action="google.com">
+                <form action="https://www.google.com/">
                     <label>Search <input type="search" placeholder="Search"></label>
                 </form>
                 <div class="icon">
@@ -60,18 +60,21 @@
                         <p>Wind Chill:<span id="windChill"></span></p>
                     </div>
                     <div class="forcastweather">    
-                        <section>
-                            <h4>monday</h4>
-                            <p>temperature:18 °C</p>
+                        <!-- <section>
+                            <h4 class="fordays"></h4>
+                            <p class="fortemp">temperature: <span>28</span> °C</p>
+                            <p class="forcastdescript">full cloudy</p>
                         </section>
                         <section>
-                            <h4>Tuesday</h4>
-                            <p>temperature:20.7 °C</p>
+                            <h4 class="fordays"></h4>
+                            <p class="fortemp">temperature:<span>28</span> °C</p>
+                            <p class="forcastdescript">full cloudy</p>
                         </section>
                         <section class="lastsec">
-                            <h4>wendnesday</h4>
-                            <p>temperature:18.3 °C</p>
-                        </section>
+                            <h4 class="fordays"></h4>
+                            <p class="fortemp">temperature:<span>28</span> °C</p>
+                            <p class="forcastdescript">full cloudy</p>
+                        </section> -->
                     </div>
                 </div>
             </div>
@@ -93,15 +96,32 @@
                         <img src="images/mealon.jpg" alt="">
                         <h4><a href="">Byu Now</a></h4>
                     </section>
+                    <section class="card">
+                        <h3>Ready Order</h3>
+                        <img src="images/fraisebol.jpg" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
                 </div>
-                
+            </div>
+            <div class="tofresh">
+                <h2>Make your own drinks</h2>
+                <p>We provide you the best natural juice make by your choosen fruit by clicking the botton below</p>
+                <picture>
+                    <img src="images/berries.jpg" alt="">
+                </picture>
+                <h4><a href="fresh.html">Go Now</a></h4>
             </div>
         </div>
     </main>
     <footer>
         <div class="footlink">
-            <p class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis error suscipit asperiores quibusdam e numquam quod modi illum vero?</p>
+            <h2>For more</h2>
+            <p><a href="fresh.html">Command</a></p>
+            <p ><a href="index.html">Contac Us</a></p>
+            <p><a href="about.html">About Us</a></p>
+            <p ><a href="fresh.html">special drinks</a></p>  
         </div>
+        
         <div class="map">
             <a href="https://www.google.com/maps/d/edit?mid=1QcHpc6mwX5k47vGmKNANN0NOkoMHYac&usp=sharing">Bountiful location📍</a>
             <!-- <img src="images/mapcast.jpg" alt="map"> -->
@@ -130,6 +150,7 @@
     <script src="scripts/weather.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/forcast.js"></script>
+    <script src="scripts/table.js"></script>
     
     
 </body>
