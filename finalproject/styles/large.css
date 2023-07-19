@@ -75,6 +75,7 @@
         width: 350px;
         transform: .5s;
     }
+    
 
     /* ------------FRESH PAGE------------ */
     .mainfresh{
@@ -98,10 +99,16 @@
         }
     }
 }
-@media(max-width: 987px){
+@media(max-width: 1045px){
     #menu{
-        gap: 18%;
+        gap: 15%;
     }
+}
+@media(max-width: 942px){
+    #menu{
+        gap: 8%;
+    }
+
 }
 @media(min-width:1200px){
     .tofresh h4{

@@ -62,17 +62,23 @@ header #main_head{
     border: none;
     padding: 10px;
 }
+h4, p, p span, .link, label, legend, label input, tr td, tr th{
+    font-family: 'Lato', sans-serif;
+}
+
 .label{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: .5em;
+    margin: 0;
     padding-top: 10px;
 }
 .label label input{
     background-color: rgb(0%, 0%, 0%,.4);
     color: white;
+    padding: 8px;
+    font-size: 1.1em;
 }
 .logo h1{
     font-size: 5em;
@@ -167,6 +173,7 @@ main{
     align-items: center;
     margin: 40px;
 }
+
 #mainCountener h2{
     color: var(--fifth_color--);
     padding: 20px 0;
@@ -190,6 +197,7 @@ main{
     margin: 0 30px ;
     align-self: center;
 }
+
 .card img{
     width: 250px;
 }
@@ -202,13 +210,17 @@ main{
 }
 
 #weather{
-    /* width: 100%; */
+    width: 100%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(0, 0, 0,.6);
 } 
+#weather-icon img, .forcastweather section img{
+    background-color: rgb(254, 244, 192,.5);
+    border-radius: 30px;
+}
 .h2, #weather div p{
     color: white;
     padding: 10px 0;
@@ -223,7 +235,7 @@ main{
     color: var(--second_color--);
 }
 .hero{
-    background-image: url(/finalproject/images/water3.jpg);
+    background-image: url(/finalproject/images/weather1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px;
@@ -293,7 +305,41 @@ main{
 .tofresh p{
     font-size: 1.2em;
 }
+.Specialdrinks div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+.feche{
+    font-size: 3em;
+}
+
+.Specialdrinks{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0%, 0%, 0%,.7);
+    width: 200px;
+    position: fixed;
+    top: 400px;
+    left: -160px;
+    padding: 10px;
+    overflow: hidden;
+}
+.Specialdrinks:hover{
+     padding-left: 170px; 
+    transition: .6s; 
+}
+.Specialdrinks h3{
+    font-family: var(--font--);
+    font-size: 1.4;
+    color: var(--second_color--);
+}
+.Specialdrinks p{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    
+}
 
 @keyframes textzoom{
     0%{
@@ -320,6 +366,9 @@ footer{
     align-items: center;
     background-color: #263248;
 }
+.textcolor{
+    font-family: var(--font--);
+}
 
 #footerIcon, #name{
     display: flex;
@@ -328,6 +377,7 @@ footer{
     padding: 20px;
 }
 .footlink{
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -351,6 +401,10 @@ footer p a:hover{
 
 .textcolor {
     color: white;
+}
+#footerIcon h2{
+    color: var(--third_color--);
+    font-size: 1.5em;
 }
 .footlogo{
     display: flex;
@@ -386,7 +440,6 @@ footer p a:hover{
 .mainfresh {
     background-image: url(/finalproject/images/mealon.jpg);
     margin: 0;
-    /* width: 100%; */
 }
 .mainfresh div{
     background-color: rgb(0%, 0%, 0%,.5);
@@ -444,7 +497,6 @@ form fieldset legend{
 }
 select, #textarea{  
     margin: 10px;
-    /* padding: .6rem; */
     width: 50%;
 }
 .secondfield label{
@@ -457,7 +509,8 @@ select, #textarea{
 }
 #FormBtn{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     border-radius: 20px;
     color: white;
     font-size: 1.2em;
@@ -478,7 +531,6 @@ select, #textarea{
 
 
 table{
-    /* border: thin solid var(--forth_color--); */
     margin: 10px auto;
     border-collapse: collapse;
     width: 100%
@@ -545,6 +597,11 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(odd) td{
     color: black;
 }
+@media(max-width:380px){
+    .tableCountener{
+        display: none;
+    }
+}
 
 
 /* ------------ABOUT US------------ */
@@ -567,7 +624,6 @@ tbody tr:nth-child(odd) td{
 .historical{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 250px;
     background-color: rgba(255, 218, 8, 0.8);

@@ -14,10 +14,9 @@ let f2 = document.querySelector(".f2");
 let f3 = document.querySelector(".f3");
 let total = document.querySelector(".total");
 
-// Get the button element from the HTML document
 let button = document.getElementById("FormBtn");
 
-// Attach the event listener to the button
+
 button.addEventListener("click", clickFunction);
 
 let dataUrl = "./data.json";
@@ -47,13 +46,13 @@ async function displayOrder() {
       Uname.textContent = "Your Order is faild: please complete the first fruit";
       alert("Your Order is faild: please complete the first fruit")
   } else{
-      userName.textContent = `Hey! ${Uname}, welcome`;
-      useremail.textContent = `We sent an Email to ${email}`;
-      userphone.textContent = `This is you phone number: ${tel}`;
+      userName.textContent = `Hello, ${Uname}, welcome to Bountiful Foods `;
+      useremail.textContent = `We receive you command from you Email: ${email}`;
+      userphone.textContent = `We will call you later in this phone number: ${tel}`;
       // userDesc.textContent = description;
       // f1.textContent = `Your first Fruit is: ${userinput1}`;
       // f2.textContent =  `Your second fruit is: ${userinput2}`;
-      // f3.textContent = `You third fruit is:  ${userinput3}`;
+      // f3.textContent = `Your third fruit is:  ${userinput3}`;
 
       const fruit1 = findFruitByName(userinput1);
       const fruit2 = findFruitByName(userinput2);
@@ -102,10 +101,29 @@ async function displayOrder() {
         Sugar: <span class="totalNutri">${Math.round(t5)}</span>`
 
         userDesc.textContent = `We receive Your note to make it more Delicious ${description}`;
-  }
+
+        
+        
+        let totalDrinks = localStorage.getItem("1") || 0;
+        totalDrinks++;
+        // Store the updated total number of orders in localStorage
+        localStorage.setItem("1", totalDrinks);
+    }
 
 }
 
+const totalDrinks = localStorage.getItem("1");
+let totalnum = document.querySelector("#TotalDrinksCount");
+function displayTotalSpecialtyDrinks(){
+  
+  if (totalDrinks) {
+    
+    totalnum.textContent = `Total Orders: ${totalDrinks}`;
+  } else {
+    
+   totalnum.textContent = "Total Orders: 0";
+  }
 
+}
 
   

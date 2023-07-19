@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="" content="Final Project for wdd230, This Is bountiful foods page where you can choise and order you favorite drinks online">
     <title>Bountiful Foods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lato&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favib.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -82,34 +86,74 @@
                 <h2>Menu for the day</h2>
                 <div class="section">
                     <section class="card">
-                        <h3>Ready Order</h3>
-                        <img src="images/pech.jpg" alt="">
+                        <h3>Fresh Cherry</h3>
+                        <img data-src="images/pech.jpg" alt="">
                         <h4><a href="">Byu Now</a></h4>
                     </section>
                     <section class="card">
-                        <h3>Ready Order</h3>
-                        <img src="images/banana.jpg" alt="">
+                        <h3>Fresh Banana</h3>
+                        <img data-src="images/banana.jpg" alt="">
                         <h4><a href="">Byu Now</a></h4>
                     </section>
                     <section class="card">
-                        <h3>Ready Order</h3>
-                        <img src="images/mealon.jpg" alt="">
+                        <h3>Grapefruit juice</h3>
+                        <img data-src="images/mealon.jpg" alt="">
                         <h4><a href="">Byu Now</a></h4>
                     </section>
                     <section class="card">
-                        <h3>Ready Order</h3>
-                        <img src="images/fraisebol.jpg" alt="">
+                        <h3>Special peach</h3>
+                        <img data-src="images/juice1.webp" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
+                    <section class="card">
+                        <h3>Coktail Orange</h3>
+                        <img data-src="images/juice2.webp" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
+                    <section class="card">
+                        <h3>Special Mulberry</h3>
+                        <img data-src="images/juice4.webp" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
+                    <section class="card">
+                        <h3>Pineapple</h3>
+                        <img data-src="images/juice5.jpeg" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
+                    <section class="card">
+                        <h3>Surprice Coktail</h3>
+                        <img data-src="images/juicecocte.jpeg" alt="">
+                        <h4><a href="">Byu Now</a></h4>
+                    </section>
+                    <section class="card">
+                        <h3>Melon food</h3>
+                        <img data-src="images/juicemeal.webp" alt="">
                         <h4><a href="">Byu Now</a></h4>
                     </section>
                 </div>
             </div>
             <div class="tofresh">
                 <h2>Make your own drinks</h2>
-                <p>We provide you the best natural juice make by your choosen fruit by clicking the botton below</p>
+                <p>Discover the exquisite taste of our premium, all-natural juices, 
+                    carefully crafted from your favorite handpicked fruits. Click 
+                    the button below to embark on a delightful journey of refreshing 
+                    flavors and wholesome goodness
+                </p>
                 <picture>
-                    <img src="images/berries.jpg" alt="">
+                    <img data-src="images/berries.jpg" alt="">
                 </picture>
                 <h4><a href="fresh.html">Go Now</a></h4>
+            </div>
+            <div class="Specialdrinks">
+                <div>
+                    <h3>Your speciality drinks</h3>
+                    <p id="TotalDrinksCount"></p>
+                    <p id="userVisit"></p>
+                </div>
+                <div>
+                    <p class="feche">⏵</p>
+                </div>
+
             </div>
         </div>
     </main>
@@ -124,7 +168,6 @@
         
         <div class="map">
             <a href="https://www.google.com/maps/d/edit?mid=1QcHpc6mwX5k47vGmKNANN0NOkoMHYac&usp=sharing">Bountiful location📍</a>
-            <!-- <img src="images/mapcast.jpg" alt="map"> -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13359.955624811973!2d-117.35900317175904!3d33.16191809786465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA%2C%20USA!5e0!3m2!1sen!2smg!4v1689148483259!5m2!1sen!2smg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="icon" id="footerIcon">
@@ -143,14 +186,12 @@
             <p class="textcolor"> © <span class="fullYear"></span>| Bountiful Foods | from Neighboor | USA </p>
             <p class="textcolor">Last UpDated:<span class ="date" ></span> </p>
         </div>
-
-
     </footer>
     <script src="scripts/index.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/date.js"></script>
     <script src="scripts/forcast.js"></script>
-    <script src="scripts/table.js"></script>
+    <script src="scripts/Order.js"></script>
     
     
 </body>

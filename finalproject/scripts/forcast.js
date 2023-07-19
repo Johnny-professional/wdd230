@@ -1,16 +1,14 @@
 const apiKey = "58c96a7989501d42676ed42af207db7c";
 const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&units=metric&appid=${apiKey}`;
 
-// const url = "https://api.openweathermap.org/data/2.5/forecast/daily?lat=-18.7915&lon=47.4740&cnt=4&appid=58c96a7989501d42676ed42af207db7c";
 async function getWeatherForecast() {
-//   const url = `${forecastUrl}?key=${apiKey}&q=${city}&format=json`;
 
   try {
     const response = await fetch(apiUrl);
     const data = await response.json();
 
     // const forecastData = data.list.slice(0, 8 * 3);
-    const forecastData = data.list.filter((forecast, index) => index % 8 === 0)
+    const forecastData = data.list.filter((forecast, index) => index % 8 === 0 && index / 8 < 3)
     // console.log(forecastData);
     displayWeatherForcast(forecastData);
   } catch(error) {

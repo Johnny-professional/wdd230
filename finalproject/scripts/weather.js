@@ -8,7 +8,7 @@ const temperatureC = parseFloat(document.querySelector('#temperature').textConte
 const speed = parseFloat(document.querySelector('#speed').textContent);
 const windChill = document.querySelector('#windChill');
 
-const url = "https://api.openweathermap.org/data/2.5/weather?lat=33.158092&lon=-117.350594&units=metric&appid=27b46718914c1af76842268cb9d3c1e4"
+const url = "https://api.openweathermap.org/data/2.5/weather?lat=33.158092&lon=-117.350594&units=metric&appid=58c96a7989501d42676ed42af207db7c"
 
 async function apiFetch() {
     try {
